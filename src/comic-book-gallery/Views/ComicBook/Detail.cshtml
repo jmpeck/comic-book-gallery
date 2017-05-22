@@ -29,7 +29,11 @@
         <div>@Html.Raw(description)</div>
 
         <h5>Artists:</h5>
-        <div>@artists</div>
+        <div>@foreach (var artist in artists)
+        {
+           <li>@artist </li>
+        }
+        </div>
     </div>
 </body>
 </html>
